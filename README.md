@@ -1,4 +1,4 @@
-#ESPrinkler
+# ESPrinkler
 
 Remote control up to 4 solenoid valves with the ESP8266 SOC (Arduino environment).
 
@@ -8,9 +8,9 @@ At the end of a sprinkling cycle, meaningfull information are published on your 
 
 ESPrinkler can easily be adapted to control different/more devices.  
 
-##Screen captures
+## Screen captures
 
-###Main screen
+### Main screen
 1. Select any or all of the 4 sprinklers by clicking corners
 2. Select the sprinkling duration with the drop-down list
 3. Press `Start` button
@@ -21,7 +21,7 @@ ESPrinkler can easily be adapted to control different/more devices.
 [Server events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events) are used to keep this screen in sync with the ESP8266 (active sprinklers, uptime, timer, heap...).  
 It means you won't get lost if you close your browser during a sprinkling cycle, and open it later in the cycle, or even open another browser from another device.
 
-###About screen
+### About screen
 
 This screen contains some infos about the ESP8266, and two command buttons.
 1. `Terminal`: press it to display the Terminal screen (see bellow)
@@ -29,14 +29,14 @@ This screen contains some infos about the ESP8266, and two command buttons.
 
 ![About screen](.github/03_about.png)
 
-###Terminal screen
+### Terminal screen
 
 This screen is intended to display specific [server events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events).  
 For the moment, only OTA related events are displayed.
 
 ![Terminal screen](.github/04_events.png)
 
-##Direct HTTP commands
+## Direct HTTP commands
 
 Activate all 4 sprinklers for 1 minute:  
 `http://esprinkler.local/start?pins=1111&duration=60`  
@@ -47,12 +47,12 @@ Activate sprinklers 1 and 4 for 5 minutes:
 Abort current sprinkling cycle:  
 `http://esprinkler.local/stop`
 
-##Dependencies
+## Dependencies
 
 - [ESP8266 Arduino Core](https://github.com/esp8266/Arduino)
 - [ESPAsyncWebServer library](https://github.com/me-no-dev/ESPAsyncWebServer)
 
-##Licence
+## Licence
 
 This is free and unencumbered software released into the public domain.
 
