@@ -1,0 +1,92 @@
+#content {
+    max-width: 300px;
+    margin: auto;
+}
+
+#yard {
+    position: relative;
+    height: 200px;
+    border: 1px solid silver;
+}
+
+.sprinkler {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background: url("sprinkler.gif") 50% 50% no-repeat;
+}
+
+#spr1 {
+    bottom: 0;
+    left: 0;
+    transform: rotate(270deg);
+}
+
+#spr2 {
+    top: 0;
+    left: 0;
+}
+
+#spr3 {
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+#spr4 {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+#cdOuter {
+    height: 5px;
+    margin-top: 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#cdInner {
+    float: left;
+    width: 100%;
+    height: 5px;
+    background-color: silver;
+}
+
+#countdown {
+    margin-top: 5px;
+    text-align: center;
+}
+
+#footer {
+    font-size: .9em;
+}
+
+#left {
+    float: left;
+    padding: 3px 10px;
+}
+
+#right {
+    float: right;
+    padding: 3px 10px;
+}
+
+#puContent {
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    font-family: Consolas, "Courier New", monospace;
+}
+

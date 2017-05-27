@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ESPrinkler</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<div data-role="page">
+    <div id="header" data-role="header" data-position="fixed">
+        <h1 id="title">ESPrinkler</h1>
+        <a href="#about" data-prefetch="true" class="ui-btn-right" data-icon="info" data-iconpos="notext">About</a>
+    </div>
+    <div id="content" data-role="content">
+        <div id="yard" class="ui-shadow ui-corner-all">
+            <div class="sprinkler" id="spr1" data-sel="0"></div>
+            <div class="sprinkler" id="spr2" data-sel="0"></div>
+            <div class="sprinkler" id="spr3" data-sel="0"></div>
+            <div class="sprinkler" id="spr4" data-sel="0"></div>
+        </div>
+
+        <select id="duration" name="duration" title="Duration">
+            <option value="1">1 mn</option>
+            <option value="5" selected="selected">5 mn</option>
+            <option value="10">10 mn</option>
+            <option value="15">15 mn</option>
+            <option value="20">20 mn</option>
+            <option value="30">30 mn</option>
+            <option value="40">40 mn</option>
+            <option value="50">50 mn</option>
+            <option value="60">60 mn</option>
+        </select>
+
+        <div class="ui-bar ui-bar-a ui-corner-all">
+            <div id="cdOuter">
+                <div id="cdInner"></div>
+            </div>
+            <div id="countdown">&nbsp;</div>
+        </div>
+
+        <button id="btnStart">Start</button>
+        <button id="btnStop">Stop</button>
+    </div>
+    <div id="footer" data-role="footer" data-position="fixed">
+        <div id="left">&nbsp;</div>
+        <div id="right">&nbsp;</div>
+    </div>
+</div>
+<div id="about" data-role="popup" data-dialog="true" data-close-btn="right">
+    <div data-role="header" data-close-btn="right" data-theme="a">
+        <h1>About ESPrinkler</h1>
+    </div>
+    <div data-role="content">
+        <div id="puContent" role="main" class="ui-content">
+            <!-- @formatter:off -->
+            <table>
+                <tr><th>Version</th><td id="about_version"></td></tr>
+                <tr><th>SDK version</th><td id="about_sdkVersion"></td></tr>
+                <tr><th>Core version</th><td id="about_coreVersion"></td></tr>
+                <tr><th>Reset reason</th><td id="about_resetReason"></td></tr>
+                <tr><th>SSID</th><td id="about_ssid"></td></tr>
+                <tr><th>IP</th><td id="about_ip"></td></tr>
+                <tr><th>STA MAC</th><td id="about_staMac"></td></tr>
+                <tr><th>AP MAC</th><td id="about_apMac"></td></tr>
+                <tr><th>Chip ID</th><td id="about_chipId"></td></tr>
+                <tr><th>Chip size</th><td id="about_chipSize"></td></tr>
+                <tr><th>Sketch size</th><td id="about_sketchSize"></td></tr>
+                <tr><th>Free space</th><td id="about_freeSpace"></td></tr>
+            </table>
+            <!-- @formatter:on -->
+            <p>
+                <a class="ui-btn ui-corner-all" href="/terminal" data-ajax="false" target="_blank">Terminal</a>
+                <a class="ui-btn ui-corner-all" href="/restart" data-ajax="false">Restart</a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

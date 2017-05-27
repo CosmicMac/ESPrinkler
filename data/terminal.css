@@ -1,0 +1,32 @@
+pre {
+    font-family: Consolas, "Courier New", monospace;
+    margin: 0;
+}
+
+.ota {
+    margin: .5em 0;
+    line-height: 80%;
+    overflow: hidden;
+}
+
+#terminal {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 40px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid silver;
+    overflow: auto;
+    background-color: black;
+    color: white;
+}
+
+#tools {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
+}
